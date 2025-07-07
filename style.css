@@ -1,91 +1,134 @@
-html, body {
-    height: 100%; /* FUNDAMENTAL para o sticky footer: faz o html e body ocuparem 100% da altura da tela */
+html,
+body {
+    height: 100%;
+    /* FUNDAMENTAL para o sticky footer: faz o html e body ocuparem 100% da altura da tela */
     margin: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Fonte padrão */
-    background-color: #f0f2f5; /* Cor de fundo suave para o site */
-    color: #333; /* Cor de texto padrão */
-    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
-    display: flex; /* Transforma o body em um flex container */
-    flex-direction: column; /* Organiza os filhos do body (header, main content, footer) em coluna */
+    font-family: 'Arial', sans-serif;
+    /* Fonte padrão */
+    background-color: #f0f2f5;
+    /* Cor de fundo suave para o site */
+    color: #333;
+    /* Cor de texto padrão */
+    line-height: 1.6;
+    /* Espaçamento entre linhas para melhor legibilidade */
+    display: flex;
+    /* Transforma o body em um flex container */
+    flex-direction: column;
+    /* Organiza os filhos do body (header, main content, footer) em coluna */
 }
 
 /* Garante que o conteúdo principal ocupe o espaço restante, empurrando o footer para baixo */
-.container.mt-4 { /* Seleciona o container principal do seu conteúdo em cada página */
-    flex: 1; /* Faz com que este container cresça e ocupe todo o espaço disponível, empurrando o footer */
+.container.mt-4 {
+    /* Seleciona o container principal do seu conteúdo em cada página */
+    flex: 1;
+    /* Faz com que este container cresça e ocupe todo o espaço disponível, empurrando o footer */
 }
 
 /* Estilos para o Cabeçalho (Navbar) */
 .navbar-brand .fab {
-    color: #E1306C; /* Cor do ícone do Instagram na navbar (cor vibrante) */
+    color: #E1306C;
+    /* Cor do ícone do Instagram na navbar (cor vibrante) */
 }
 
 /* Estilos para o Card de Perfil (usado no index.html) */
 .profile-card {
-    background-color: #ffffff; /* Fundo branco para o card */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 30px 20px; /* Preenchimento interno */
+    background-color: #ffffff;
+    /* Fundo branco para o card */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    padding: 30px 20px;
+    /* Preenchimento interno */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza itens horizontalmente */
+    align-items: center;
+    /* Centraliza itens horizontalmente */
     text-align: center;
-    height: 100%; /* Permite que o card se estique para preencher a coluna do Bootstrap */
+    height: 100%;
+    /* Permite que o card se estique para preencher a coluna do Bootstrap */
 }
 
 .profile-image-container {
-    width: 140px; /* Largura do círculo da imagem */
-    height: 140px; /* Altura do círculo da imagem */
-    border-radius: 50%; /* FUNDAMENTAL: Torna o container da imagem redondo */
-    overflow: hidden; /* Corta a imagem fora dos limites do círculo */
-    margin-bottom: 25px; /* Espaço abaixo da imagem */
-    box-shadow: 0 0 0 6px #e0e0e0; /* O "anel" cinza ao redor da foto */
-    flex-shrink: 0; /* Impede que este item encolha em um flex container */
+    width: 140px;
+    /* Largura do círculo da imagem */
+    height: 140px;
+    /* Altura do círculo da imagem */
+    border-radius: 50%;
+    /* FUNDAMENTAL: Torna o container da imagem redondo */
+    overflow: hidden;
+    /* Corta a imagem fora dos limites do círculo */
+    margin-bottom: 25px;
+    /* Espaço abaixo da imagem */
+    box-shadow: 0 0 0 6px #e0e0e0;
+    /* O "anel" cinza ao redor da foto */
+    flex-shrink: 0;
+    /* Impede que este item encolha em um flex container */
 }
 
 .profile-image {
-    width: 100%; /* Imagem ocupa 100% da largura do container */
-    height: 100%; /* Imagem ocupa 100% da altura do container */
-    object-fit: cover; /* FUNDAMENTAL: Faz a imagem preencher o espaço sem distorcer, cortando o excesso */
-    object-position: center top; /* Onde a imagem será "focada" dentro do círculo. Ajuste para sua foto! */
+    width: 100%;
+    /* Imagem ocupa 100% da largura do container */
+    height: 100%;
+    /* Imagem ocupa 100% da altura do container */
+    object-fit: cover;
+    /* FUNDAMENTAL: Faz a imagem preencher o espaço sem distorcer, cortando o excesso */
+    object-position: center top;
+    /* Onde a imagem será "focada" dentro do círculo. Ajuste para sua foto! */
 }
 
 /* Estilos para os Botões de Categoria (Estudante, Graduando) */
 .buttons {
     display: flex;
-    gap: 12px; /* Espaçamento entre os botões */
+    gap: 12px;
+    /* Espaçamento entre os botões */
     margin-bottom: 30px;
-    flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas menores */
-    justify-content: center; /* Centraliza os botões quando quebram a linha */
+    flex-wrap: wrap;
+    /* Permite que os botões quebrem a linha em telas menores */
+    justify-content: center;
+    /* Centraliza os botões quando quebram a linha */
 }
 
 .button {
     padding: 10px 20px;
-    border-radius: 25px; /* Deixa os botões arredondados */
-    text-decoration: none; /* Remove sublinhado dos links */
+    border-radius: 25px;
+    /* Deixa os botões arredondados */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
     color: #ffffff;
     font-weight: bold;
     display: flex;
-    align-items: center; /* Alinha ícone e texto verticalmente */
-    gap: 8px; /* Espaçamento entre ícone e texto */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos suaves ao passar o mouse */
-    white-space: nowrap; /* Impede que o texto dentro do botão quebre em várias linhas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para os botões */
+    align-items: center;
+    /* Alinha ícone e texto verticalmente */
+    gap: 8px;
+    /* Espaçamento entre ícone e texto */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Efeitos suaves ao passar o mouse */
+    white-space: nowrap;
+    /* Impede que o texto dentro do botão quebre em várias linhas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para os botões */
 }
 
 .button.web-dev {
-    background-color: #007bff; /* Azul padrão do Bootstrap */
+    background-color: #007bff;
+    /* Azul padrão do Bootstrap */
 }
+
 .button.web-dev:hover {
     background-color: #0056b3;
-    transform: translateY(-2px); /* Efeito de "levantar" */
+    transform: translateY(-2px);
+    /* Efeito de "levantar" */
 }
 
 .button.game-dev {
-    background-color: #6c757d; /* Cinza padrão do Bootstrap */
+    background-color: #6c757d;
+    /* Cinza padrão do Bootstrap */
 }
+
 .button.game-dev:hover {
     background-color: #5a6268;
     transform: translateY(-2px);
@@ -93,46 +136,66 @@ body {
 
 /* Estilos para Informações de Contato */
 .contact-info {
-    width: 100%; /* Ocupa a largura total do profile-card */
-    padding: 0 10px; /* Pequeno preenchimento interno */
+    width: 100%;
+    /* Ocupa a largura total do profile-card */
+    padding: 0 10px;
+    /* Pequeno preenchimento interno */
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    background-color: #f8f9fa; /* Fundo suave para cada item de informação */
+    background-color: #f8f9fa;
+    /* Fundo suave para cada item de informação */
     border-radius: 8px;
     padding: 12px 15px;
     margin-bottom: 12px;
     font-size: 0.95rem;
     color: #495057;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra sutil */
-    transition: transform 0.2s ease; /* Efeito ao passar o mouse */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Sombra sutil */
+    transition: transform 0.2s ease;
+    /* Efeito ao passar o mouse */
 }
+
 .info-item:last-child {
-    margin-bottom: 0; /* Remove margem do último item para não ter espaço extra */
+    margin-bottom: 0;
+    /* Remove margem do último item para não ter espaço extra */
 }
+
 .info-item i {
-    margin-right: 15px; /* Espaço entre ícone e texto */
-    color: #6c757d; /* Cor dos ícones */
+    margin-right: 15px;
+    /* Espaço entre ícone e texto */
+    color: #6c757d;
+    /* Cor dos ícones */
     font-size: 1.2rem;
-    width: 25px; /* Largura fixa para alinhar os ícones verticalmente */
+    width: 25px;
+    /* Largura fixa para alinhar os ícones verticalmente */
     text-align: center;
 }
+
 .info-item a {
-    text-decoration: none; /* Remove sublinhado do link do GitHub Inicial */
-    color: #474747; /* Cor do link do GitHub Inicial */
+    text-decoration: none;
+    /* Remove sublinhado do link do GitHub Inicial */
+    color: #474747;
+    /* Cor do link do GitHub Inicial */
 }
+
 .info-item a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
 .list-group-item a {
-    text-decoration: none; /* Remove sublinhado dos links do Linkedn e GitHub no Curriculo */
-    color: #000000; /* Cor do link do Linkedn e GitHub no Curriculo */
+    text-decoration: none;
+    /* Remove sublinhado dos links do Linkedn e GitHub no Curriculo */
+    color: #000000;
+    /* Cor do link do Linkedn e GitHub no Curriculo */
 }
+
 .list-group-item a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estilos para a Seção de Conteúdo da Direita (usado em index.html, curriculo.html, portfolio.html) */
@@ -141,16 +204,20 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    min-height: 400px; /* Altura mínima para que a área de conteúdo seja visível, ajuste conforme necessário */
+    min-height: 400px;
+    /* Altura mínima para que a área de conteúdo seja visível, ajuste conforme necessário */
 }
 
 .section-title {
-    color: #2c3e50; /* Cor escura para títulos de seção */
+    color: #2c3e50;
+    /* Cor escura para títulos de seção */
     margin-bottom: 25px;
     font-weight: 700;
-    border-bottom: 2px solid #007bff; /* Linha azul abaixo do título */
+    border-bottom: 2px solid #007bff;
+    /* Linha azul abaixo do título */
     padding-bottom: 10px;
-    display: inline-block; /* Faz a borda seguir a largura do texto */
+    display: inline-block;
+    /* Faz a borda seguir a largura do texto */
 }
 
 .content-section p {
@@ -160,19 +227,24 @@ body {
 
 /* Estilos para a Lista de Habilidades (no index.html e curriculo.html) */
 .list-group-item {
-    border-color: #dee2e6; /* Cor da borda padrão do Bootstrap para itens da lista */
+    border-color: #dee2e6;
+    /* Cor da borda padrão do Bootstrap para itens da lista */
     margin-bottom: 8px;
     border-radius: 8px;
     padding: 15px;
-    transition: background-color 0.2s ease; /* Efeito ao passar o mouse */
+    transition: background-color 0.2s ease;
+    /* Efeito ao passar o mouse */
 }
+
 .list-group-item:hover {
-    background-color: #e9ecef; /* Leve alteração de fundo ao passar o mouse */
+    background-color: #e9ecef;
+    /* Leve alteração de fundo ao passar o mouse */
 }
 
 /* --- Estilos Específicos para Currículo e Portfólio (H1 e H3) --- */
 .content-section h1.section-title {
-    font-size: 2.2rem; /* Título principal da página de currículo/portfólio */
+    font-size: 2.2rem;
+    /* Título principal da página de currículo/portfólio */
     border-bottom: 3px solid #007bff;
     padding-bottom: 15px;
     margin-bottom: 30px;
@@ -192,29 +264,40 @@ body {
 
 /* Estilos Específicos para os Cards do Portfólio */
 .portfolio-item {
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efeitos suaves ao passar o mouse */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Efeitos suaves ao passar o mouse */
     border-radius: 10px;
-    overflow: hidden; /* Garante que a imagem e a borda arredondada se comportem bem */
+    overflow: hidden;
+    /* Garante que a imagem e a borda arredondada se comportem bem */
 }
+
 .portfolio-item:hover {
-    transform: translateY(-5px); /* Efeito de levantar */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    transform: translateY(-5px);
+    /* Efeito de levantar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Sombra mais pronunciada */
 }
+
 .portfolio-item .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
-    object-position: center top; /* Garante que as imagens dos projetos se encaixem bem no espaço */
-    height: 180px; /* Altura fixa para as imagens do portfólio */
+    object-position: center top;
+    /* Garante que as imagens dos projetos se encaixem bem no espaço */
+    height: 180px;
+    /* Altura fixa para as imagens do portfólio */
 }
+
 .portfolio-item .card-title {
     color: #007bff;
     font-weight: 600;
 }
+
 .portfolio-item .card-text {
     font-size: 0.95rem;
     color: #555;
 }
+
 .portfolio-item .card-footer {
     background-color: #f8f9fa;
     border-top: 1px solid #dee2e6;
@@ -224,6 +307,8 @@ body {
 
 /* Ajustes para o footer */
 footer {
-    padding-top: 2rem; /* Adiciona um padding-top para separar do conteúdo */
-    margin-top: 0 !important; /* FUNDAMENTAL para o sticky footer: remove margem superior extra do Bootstrap */
+    padding-top: 2rem;
+    /* Adiciona um padding-top para separar do conteúdo */
+    margin-top: 0 !important;
+    /* FUNDAMENTAL para o sticky footer: remove margem superior extra do Bootstrap */
 }
