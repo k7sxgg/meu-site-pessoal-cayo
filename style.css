@@ -1,4 +1,3 @@
-/* Estilos Globais e do Body */
 html, body {
     height: 100%; /* FUNDAMENTAL para o sticky footer: faz o html e body ocuparem 100% da altura da tela */
     margin: 0;
@@ -121,11 +120,18 @@ body {
     text-align: center;
 }
 .info-item a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: #000000; /* Cor dos links */
-    font-weight: 100;
+    text-decoration: none; /* Remove sublinhado do link do GitHub Inicial */
+    color: #474747; /* Cor do link do GitHub Inicial */
 }
 .info-item a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.list-group-item a {
+    text-decoration: none; /* Remove sublinhado dos links do Linkedn e GitHub no Curriculo */
+    color: #000000; /* Cor do link do Linkedn e GitHub no Curriculo */
+}
+.list-group-item a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
