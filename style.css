@@ -27,12 +27,6 @@ body {
     /* Faz com que este container cresça e ocupe todo o espaço disponível, empurrando o footer */
 }
 
-/* Estilos para o Cabeçalho (Navbar) */
-.navbar-brand .fab {
-    color: #E1306C;
-    /* Cor do ícone do Instagram na navbar (cor vibrante) */
-}
-
 /* Estilos para o Card de Perfil (usado no index.html) */
 .profile-card {
     background-color: #ffffff;
@@ -177,7 +171,7 @@ body {
 .info-item a {
     text-decoration: none;
     /* Remove sublinhado do link do GitHub Inicial */
-    color: #474747;
+    color: #333;
     /* Cor do link do GitHub Inicial */
 }
 
@@ -189,7 +183,7 @@ body {
 .list-group-item a {
     text-decoration: none;
     /* Remove sublinhado dos links do Linkedn e GitHub no Curriculo */
-    color: #000000;
+    color: #333;
     /* Cor do link do Linkedn e GitHub no Curriculo */
 }
 
